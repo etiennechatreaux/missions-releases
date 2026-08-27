@@ -4,5 +4,13 @@
     <title>Missions</title>
     <description>Mises à jour de Missions</description>
     <language>fr</language>
+    <item>
+      <title>2026.08.27 · c777297</title>
+      <pubDate>Thu, 27 Aug 2026 15:22:07 +0200</pubDate>
+      <sparkle:version>202608271330</sparkle:version>
+      <sparkle:shortVersionString>2026.08.27 · c777297</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/etiennechatreaux/missions-releases/releases/download/202608271330/Missions-202608271330.dmg" type="application/octet-stream" sparkle:edSignature="n8kthHDH9rTc1H84SGkQpf3wnUtu0P/F0vy4V4Z6HJP5elt4WWu7PgXWom0RMkvdxQ1VkgHPb0/l6eu7JTROAQ==" length="2932835" />
+    </item>
   </channel>
 </rss>
