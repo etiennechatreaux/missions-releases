@@ -14,6 +14,10 @@
     --muted: #6b6b70;
     --line: #e4e4e7;
     --accent: #2f6fed;
+    /* Couleur du texte du bouton, distincte de l'accent : en sombre, l'accent
+       s'éclaircit pour rester lisible sur le fond, et du blanc dessus tomberait
+       à 2,7:1. Le label passe donc en foncé. */
+    --accent-fg: #ffffff;
     --card: #fafafa;
   }
   @media (prefers-color-scheme: dark) {
@@ -23,6 +27,7 @@
       --muted: #9b9ba1;
       --line: #2c2c31;
       --accent: #6d9bff;
+      --accent-fg: #10182c;
       --card: #1b1b1f;
     }
   }
@@ -41,7 +46,7 @@
   .pitch { font-size: 1.2rem; color: var(--muted); margin: 0 auto 32px; max-width: 30ch; }
   .requirement { color: var(--muted); font-size: 0.92rem; margin: 0 0 12px; }
   .download {
-    display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+    display: inline-block; background: var(--accent); color: var(--accent-fg); text-decoration: none;
     font-weight: 600; font-size: 1.05rem; padding: 14px 32px; border-radius: 10px;
   }
   .download:hover { filter: brightness(1.08); }
