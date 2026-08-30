@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Missions — une liste de tâches qui flotte au-dessus de tout le reste</title>
+<meta name="description" content="Palette de tâches flottante pour macOS. Un raccourci la fait apparaître de n'importe où. Gratuite, locale, sans compte.">
+<link rel="icon" href="assets/icon.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --line: #e4e4e7;
+    --accent: #2f6fed;
+    /* Couleur du texte du bouton, distincte de l'accent : en sombre, l'accent
+       s'éclaircit pour rester lisible sur le fond, et du blanc dessus tomberait
+       à 2,7:1. Le label passe donc en foncé. */
+    --accent-fg: #ffffff;
+    --card: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131316;
+      --fg: #f2f2f4;
+      --muted: #9b9ba1;
+      --line: #2c2c31;
+      --accent: #6d9bff;
+      --accent-fg: #10182c;
+      --card: #1b1b1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 72px 24px 96px; }
+  header { text-align: center; }
+  header img.icon { width: 112px; height: 112px; }
+  h1 { font-size: 2.4rem; letter-spacing: -0.02em; margin: 20px 0 8px; }
+  .pitch { font-size: 1.2rem; color: var(--muted); margin: 0 auto 32px; max-width: 30ch; }
+  .requirement { color: var(--muted); font-size: 0.92rem; margin: 0 0 12px; }
+  .download {
+    display: inline-block; background: var(--accent); color: var(--accent-fg); text-decoration: none;
+    font-weight: 600; font-size: 1.05rem; padding: 14px 32px; border-radius: 10px;
+  }
+  .download:hover { filter: brightness(1.08); }
+  .shot { margin: 56px auto 0; display: block; max-width: 380px; width: 100%; height: auto;
+          border-radius: 14px; box-shadow: 0 18px 48px rgba(0,0,0,.22); }
+  h2 { font-size: 1.05rem; letter-spacing: 0.02em; text-transform: uppercase;
+       color: var(--muted); margin: 64px 0 20px; }
+  .item { border-top: 1px solid var(--line); padding: 20px 0; }
+  .item h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .item p { margin: 0; color: var(--muted); }
+  kbd {
+    font: inherit; font-weight: 600; background: var(--card); border: 1px solid var(--line);
+    border-radius: 6px; padding: 1px 7px;
+  }
+  footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 0.9rem; text-align: center; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img class="icon" src="assets/icon.png" alt="Icône de Missions">
+    <h1>Missions</h1>
+    <p class="pitch">Une liste de tâches qui flotte au-dessus de tout le reste.</p>
+    <p class="requirement">macOS 26 ou plus récent · gratuit · aucun compte</p>
+    <a class="download" href="https://github.com/etiennechatreaux/missions-releases/releases/latest/download/Missions.dmg">
+      Télécharger pour macOS
+    </a>
+    <img class="shot" src="assets/palette.png" alt="La palette Missions, avec l'Inbox en haut et les tâches du jour en dessous">
+  </header>
+
+  <h2>Ce que ça fait</h2>
+
+  <div class="item">
+    <h3>Une palette, appelée d'un raccourci</h3>
+    <p><kbd>⌥ droite</kbd> + <kbd>⌘ droite</kbd> pressées ensemble affichent ou masquent la
+    palette, depuis n'importe quelle app. Elle suit tous les bureaux, ne recouvre pas le plein
+    écran et ne vole jamais le focus : la fenêtre dans laquelle vous tapiez reste celle dans
+    laquelle vous tapez.</p>
+  </div>
+
+  <div class="item">
+    <h3>Des listes, et une journée</h3>
+    <p>Autant de listes que vous en créez, chacune avec son onglet. L'onglet
+    <em>Aujourd'hui</em> rassemble ce que vous avez décidé de faire maintenant ; ce qui est coché
+    disparaît au changement de jour, et ce qui ne l'est pas reste. Les sous-tâches tiennent sur un
+    niveau, volontairement.</p>
+  </div>
+
+  <div class="item">
+    <h3>Un mode Focus qui met les autres apps en retrait</h3>
+    <p>Une tâche peut ouvrir une session de focus. Les apps que vous n'avez pas autorisées pour la
+    session sont alors <strong>recouvertes d'un voile</strong> tant qu'elles sont au premier plan.
+    Rien n'est jamais fermé ni quitté : le voile se lève dès que la session s'arrête.</p>
+  </div>
+
+  <h2>Ce qu'il faut savoir avant d'installer</h2>
+
+  <div class="item">
+    <h3>Une permission au premier lancement</h3>
+    <p>macOS ne laisse entendre un raccourci global qu'aux apps autorisées. Missions demande donc
+    la permission <strong>Accessibilité</strong>, et rien d'autre. Refusée, l'app fonctionne
+    toujours : le raccourci ne marche alors que quand la palette a déjà le focus, et un clic sur
+    l'icône du Dock la ramène.</p>
+  </div>
+
+  <div class="item">
+    <h3>Vos tâches ne quittent pas votre Mac</h3>
+    <p>Pas de compte, pas de serveur, pas de statistiques d'usage. Tout vit dans un fichier local,
+    dans <code>~/Library/Application&nbsp;Support/Missions</code>. Désinstaller, c'est jeter l'app
+    à la corbeille et supprimer ce dossier.</p>
+  </div>
+
+  <div class="item">
+    <h3>Les mises à jour se font toutes seules</h3>
+    <p>L'app vérifie d'elle-même s'il existe une version plus récente et propose de l'installer.
+    Elle est signée et notarisée par Apple, donc elle s'ouvre sans avertissement de sécurité.</p>
+  </div>
+
+  <footer>
+    Un problème, une question, une idée ?
+    <a href="https://github.com/etiennechatreaux/missions-releases/issues">Ouvrez un ticket</a>.<br>
+    <a href="https://github.com/etiennechatreaux/missions-releases/releases">Toutes les versions</a>
+  </footer>
+
+</div>
+</body>
+</html>
