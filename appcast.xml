@@ -5,21 +5,24 @@
     <description>Mises à jour de Missions</description>
     <language>fr</language>
     <item>
-      <title>2026.08.27 · 0cd09f1</title>
-      <pubDate>Thu, 27 Aug 2026 19:55:38 +0200</pubDate>
-      <sparkle:version>202608271954</sparkle:version>
-      <sparkle:shortVersionString>2026.08.27 · 0cd09f1</sparkle:shortVersionString>
+      <title>2026.09.06 · 3e50dc4</title>
+      <pubDate>Sun, 06 Sep 2026 18:14:17 +0200</pubDate>
+      <sparkle:version>202609061812</sparkle:version>
+      <sparkle:shortVersionString>2026.09.06 · 3e50dc4</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
       <ul>
-        <li>derive release notes from commits</li>
-        <li>render wrapped titles through an NSTextField</li>
-        <li>wrap row titles on two lines</li>
-        <li>choose a mode and its apps before each session</li>
-        <li>scan every app installed on the Mac</li>
+        <li>Une zone « Vie » avec des routines quotidiennes, leur bande du jour, l'XP, le niveau et la série</li>
+        <li>La palette est séparée en deux zones, avec sa barre d'onglets propre</li>
+        <li>L'effort est demandé à la capture d'une tâche, et se corrige ensuite d'un clic</li>
+        <li>Une tâche se déplace d'une liste à l'autre depuis sa ligne</li>
+        <li>La session de focus affiche son minuteur et son horloge en haut de la palette</li>
+        <li>Le mode et les apps de la session se choisissent avant chaque démarrage</li>
+        <li>Un écran d'accueil au premier lancement, qui demande lui-même l'autorisation d'accessibilité</li>
+        <li>Les données sont sauvegardées avant chaque migration, et un fichier d'un format inconnu n'est plus ouvert de force</li>
       </ul>
       ]]></description>
-      <enclosure url="https://github.com/etiennechatreaux/missions-releases/releases/download/202608271954/Missions-202608271954.dmg" type="application/octet-stream" sparkle:edSignature="n/fC7l4tnrttXRdGn0xNj7zsFVE9ryRDTw7z7+el9NqtmKCu67efT/J07dGj+7J0Nm1Yd/aVOpxkYtMpAzf+DQ==" length="3069134" />
+      <enclosure url="https://github.com/etiennechatreaux/missions-releases/releases/download/202609061812/Missions-202609061812.dmg" type="application/octet-stream" sparkle:edSignature="7Q6RTt226/XgRUbVRWI6gZyN5Arc6nQsmFReCSFrelu267iJ+n+xaCsGWp1Rla/WWwiJul6bCyG1dysEpOf4BA==" length="4173222" />
     </item>
   </channel>
 </rss>
