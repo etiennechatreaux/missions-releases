@@ -5,17 +5,20 @@
     <description>Mises à jour de Missions</description>
     <language>fr</language>
     <item>
-      <title>2026.09.06 · 920e7fb</title>
-      <pubDate>Sun, 06 Sep 2026 20:37:15 +0200</pubDate>
-      <sparkle:version>202609062034</sparkle:version>
-      <sparkle:shortVersionString>2026.09.06 · 920e7fb</sparkle:shortVersionString>
+      <title>2026.09.08 · 9c44be8</title>
+      <pubDate>Tue, 08 Sep 2026 13:07:36 +0200</pubDate>
+      <sparkle:version>202609081304</sparkle:version>
+      <sparkle:shortVersionString>2026.09.08 · 9c44be8</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
       <ul>
-        <li>Missions fonctionne maintenant sur macOS 14 Sonoma et plus récent, sur Mac Apple Silicon comme Intel</li>
+        <li>La synchronisation Notion se connecte maintenant à ta propre base : Missions lit ses colonnes et te propose la correspondance</li>
+        <li>Chaque routine a son heure, à la place des créneaux — et l'app suit le changement d'heure</li>
+        <li>Les fenêtres de réglages et de focus s'ouvrent à l'endroit où tu les as laissées</li>
+        <li>L'ordre de la liste des réglages ne bouge plus pendant qu'on édite une ligne</li>
       </ul>
       ]]></description>
-      <enclosure url="https://github.com/etiennechatreaux/missions-releases/releases/download/202609062034/Missions-202609062034.dmg" type="application/octet-stream" sparkle:edSignature="T+hvZApcPEbrjXNknx6H4jCXgTteFeTpxrgxNJ7UM7RuXkE40Hj4Bq4K7gP8utKTyFO3iriPry+Z/xJsJRpMDg==" length="4203748" />
+      <enclosure url="https://github.com/etiennechatreaux/missions-releases/releases/download/202609081304/Missions-202609081304.dmg" type="application/octet-stream" sparkle:edSignature="xudIcxX3B14MOg2yZvYH6voNOaGMbbhm92JJMvPJ1WX0UnOU/JeWdEPADCwGd+gTDvflGOhezUyn6DkGaKXHBQ==" length="4355105" />
     </item>
   </channel>
 </rss>
